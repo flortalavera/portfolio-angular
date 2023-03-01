@@ -1,0 +1,65 @@
+@use '../../design-system/reset';
+@use '../../design-system/variables';
+
+.hero {
+    height: 100%;
+    background-image: url("../../../assets/images/slider.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+
+    .header-container {
+        width: 90%;
+        overflow: hidden;
+        padding: 1rem;
+
+        .navigation-menu{
+            display: flex;
+            justify-content: flex-end;
+
+            a{
+                color:black;
+                margin-right: 2rem;
+                font-size: map-get(variables.$font-sizes, "subtext");
+            }
+        }
+
+        .hero-container {
+            display: flex;
+            height: calc(100vh - 70px);
+            color: white;
+            margin-top: 20%;
+
+            .hero-title {
+                padding: 1rem;
+                font-size: map-get(variables.$font-sizes, "title");
+                animation-duration: 3s;
+                animation-name: slidein;
+                animation-fill-mode: forwards; 
+                transform: translateX(100%); 
+            }
+            
+            .hero-subtitle {
+                font-size: map-get(variables.$font-sizes, "subtitle");
+                font-weight: 300;
+                margin-left: 1rem;
+                animation-duration: 4s;
+                animation-name: slidein;
+                animation-fill-mode: forwards;
+                transform: translateY(-100%);
+            }
+        }
+
+        @keyframes slidein {
+            from {
+              transform: translateX(100%);
+            }
+          
+            to {
+              transform: translateX(0%);
+            }
+        }
+    }
+}

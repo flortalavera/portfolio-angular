@@ -1,0 +1,24 @@
+@use '../../design-system/reset';
+@use '../../design-system/variables';
+
+.presentation-content{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .personal-image{
+        display: flex;
+        justify-items: center;
+
+        img{
+            width: 20%;
+            border-radius: 50%;
+        }
+    }
+
+    .text-presentation{
+        text-align: center;
+        font-size: map-get(variables.$font-sizes, "subtext");
+    }
+}
