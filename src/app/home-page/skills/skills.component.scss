@@ -1,0 +1,36 @@
+@use '../../design-system/reset';
+@use '../../design-system/variables';
+
+.section-title{
+    text-align: center;
+    font-size: map-get(variables.$font-sizes, "title");
+    margin: 2rem;
+}
+
+.cards-content{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    mat-card{
+        width: 13%;
+        align-items: center;
+        margin: 1rem;
+        cursor: pointer;
+
+        .skill-image{
+            width: 50%;
+            margin-bottom: 1rem;
+        }
+    
+        .skill-name{
+            font-size: map-get(variables.$font-sizes, "subtext");
+            margin-bottom: .5rem;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
