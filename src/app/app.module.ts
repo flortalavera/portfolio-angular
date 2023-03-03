@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -18,6 +19,8 @@ import { HeaderComponent } from './home-page/header/header.component';
 import { AboutMeComponent } from './home-page/about-me/about-me.component';
 import { SkillsComponent } from './home-page/skills/skills.component';
 import { FooterComponent } from './home-page/footer/footer.component';
+import { ProjectsComponent } from './home-page/projects/projects.component';
+import { ContactComponent } from './home-page/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { FooterComponent } from './home-page/footer/footer.component';
     HeaderComponent,
     AboutMeComponent,
     SkillsComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import { FooterComponent } from './home-page/footer/footer.component';
     MatMenuModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

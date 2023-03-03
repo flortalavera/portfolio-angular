@@ -1,0 +1,22 @@
+@use '../../design-system/reset';
+@use '../../design-system/variables';
+
+.section-title{
+    text-align: center;
+    font-size: map-get(variables.$font-sizes, "title");
+    margin: 4rem;
+}
+
+.form-fields{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mat-mdc-button:not(:disabled){
+    margin: 1rem;
+    color: #ffff;
+    padding: 0 2rem;
+    background-color: map-get(variables.$colors, "medium");
+}
