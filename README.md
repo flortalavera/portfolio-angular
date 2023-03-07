@@ -2,12 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
-## Requirements
+## Requirements :pushpin:
 - [Angular CLI].
 - [Sass] (https://sass-lang.com/install).
 - [npm] (https://www.npmjs.com/package/download).
 
-## Download instructions
+## Download instructions :page_with_curl:
 1) Clone this repository
 
 ```
@@ -21,5 +21,7 @@ npm install
 ```
 ng serve
 ```
+
+## Listo! :rocket:
 
 For any inconvenience please contact its developer at florii.talavera@gmail.com or https://www.linkedin.com/in/flor-talavera/
