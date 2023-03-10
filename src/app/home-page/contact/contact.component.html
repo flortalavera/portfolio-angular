@@ -1,18 +1,33 @@
 <h1 class="section-title">Contactame</h1>
-<form (ngSubmit)="onSubmit()">
-<div class="form-fields">
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <div class="form-fields">
     <mat-form-field appearance="fill">
-        <mat-label>Name</mat-label>
-        <input matInput [(ngModel)]="name" name="name" required>
-      </mat-form-field>
-      <mat-form-field appearance="fill">
-        <mat-label>Mail</mat-label>
-        <input matInput [(ngModel)]="email" name="email" required email>
-      </mat-form-field>
-      <mat-form-field appearance="fill">
-        <mat-label>Message</mat-label>
-        <textarea matInput [(ngModel)]="message" name="message" required></textarea>
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" name="name" required>
+      <div
+        *ngIf="contactForm.controls['name']?.invalid && contactForm.controls['name']?.dirty || contactForm.controls['name']?.errors?.['name']">
+        <div *ngIf="contactForm.controls['name']?.errors?.['required']">El Nombre es requerido.</div>
+      </div>
     </mat-form-field>
-</div>
-<button mat-button type="submit" class="send-message">ENVIAR</button>
+    <mat-form-field appearance="fill">
+      <mat-label>Mail</mat-label>
+      <input matInput formControlName="email" name="email" required email>
+      <div
+        *ngIf="contactForm.controls['email']?.invalid && contactForm.controls['email']?.dirty || contactForm.controls['email']?.errors?.['email']">
+        <div *ngIf="contactForm.controls['email']?.errors?.['required']">El Email es requerido.</div>
+        <div *ngIf="contactForm.controls['email']?.invalid && contactForm.controls['email']?.errors?.['email']">
+          Por favor ingrese un Email válido.
+        </div>
+      </div>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Message</mat-label>
+      <textarea matInput formControlName="message" name="message" required></textarea>
+      <div
+        *ngIf="contactForm.controls['message']?.invalid && contactForm.controls['message']?.dirty || contactForm.controls['message']?.errors?.['message']">
+        <div *ngIf="contactForm.controls['message']?.errors?.['required']">El Mensaje es requerido.</div>
+      </div>
+    </mat-form-field>
+    <button mat-button type="submit" class="send-message" [disabled]="!contactForm.valid">ENVIAR</button>
+  </div>
 </form>

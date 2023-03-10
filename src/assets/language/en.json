@@ -1,0 +1,10 @@
+{
+    "navbarItems": [
+        "About Me", "Skills", "Projects", "Contact Me"
+    ],
+    "header": {
+        "greeting": "Hi",
+        "title": "I'm Florencia Talavera",
+        "phrase": "Transforming ideas into realities"
+    }
+}
