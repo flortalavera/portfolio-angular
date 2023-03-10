@@ -13,4 +13,5 @@ export class SkillsComponent {
   ) { 
     this._translateService.setDefaultLang('es');
   }
+
 }

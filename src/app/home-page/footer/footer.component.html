@@ -2,13 +2,16 @@
     <p className="copy">&copy; My Portfolio by Flor Talavera </p>
     <div class="icons-footer">
         <a href="https://www.linkedin.com/in/flor-talavera/" target="_blank">
-            <img class="icon-image" src="../../../assets/images/linkedin.png" alt="linkedin-icon">
+            <img *ngIf="!isDarkMode" class="icon-image" src="../../../assets/images/social-media/linkedin.png" alt="linkedin-icon">
+            <img *ngIf="isDarkMode" class="icon-image" src="../../../assets/images/social-media/linkedinWhite.png" alt="linkedin-icon">
         </a>
         <a href="mailto:florii.talavera@gmail.com">
-            <mat-icon aria-hidden="false" fontIcon="email"></mat-icon>
+            <img *ngIf="!isDarkMode" class="icon-image" src="../../../assets/images/social-media/email.png" alt="email-icon">
+            <img *ngIf="isDarkMode" class="icon-image" src="../../../assets/images/social-media/emailWhite.png" alt="linkedin-icon">
         </a>
         <a href="https://github.com/flortalavera" target="_blank">
-            <img class="icon-image" src="../../../assets/images/github.png" alt="github-icon">
+            <img *ngIf="!isDarkMode" class="icon-image" src="../../../assets/images/social-media/github.png" alt="github-icon">
+            <img *ngIf="isDarkMode" class="icon-image" src="../../../assets/images/social-media/githubWhite.png" alt="linkedin-icon">
         </a>
     </div>
 </div>

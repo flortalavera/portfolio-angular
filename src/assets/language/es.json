@@ -3,7 +3,7 @@
         "Sobre Mi",
         "Aptitudes",
         "Proyectos",
-        "Contactame"
+        "Contáctame"
     ],
     "header": {
         "greeting": "Hola!",
@@ -22,7 +22,7 @@
         "first": "Actualmente estoy tomando clases particulares de inglés en",
         "level": "Mi nivel actual es B1",
         "third": "Sé lo importante de éste idioma tanto en el ámbito laboral, como para fortalecer la autoconfianza, desarrollo y desempeño.",
-        "others": "También sigo aprendiendo y perfeccionandome en tecnologías como:"
+        "others": "También sigo aprendiendo y perfeccionandome en herramientas como:"
     },
     "snackbar": {
         "messageOk": "Mensaje enviado correctamente",

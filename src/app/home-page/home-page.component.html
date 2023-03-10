@@ -1,8 +1,16 @@
 <app-header></app-header>
-<div class="sections">
-    <app-about-me id="about-me"></app-about-me>
-    <app-skills id="skills"></app-skills>
-    <app-projects id="projects"></app-projects>
-    <app-contact id="contact"></app-contact>
-</div>
-<app-footer></app-footer>
+<body [ngClass]="{'dark': isDarkMode}">
+    <div class="theme">
+        <a href="#" (click)="changeTheme()">
+            <img *ngIf="!isDarkMode" title="Dark Mode" src="../../../assets/images/darkMode.png" alt="Dark Mode">
+            <img *ngIf="isDarkMode" title="Light Mode" src="../../../assets/images/lightMode.png" alt="Light Mode">
+        </a>
+    </div>
+    <div class="sections">
+        <app-about-me id="about-me"></app-about-me>
+        <app-skills id="skills"></app-skills>
+        <app-projects id="projects"></app-projects>
+        <app-contact id="contact"></app-contact>
+    </div>
+    <app-footer [isDarkMode]="isDarkMode"></app-footer>
+</body>

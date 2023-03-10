@@ -21,17 +21,9 @@
 
             a{
                 color:black;
-                margin-right: 1rem;
+                margin-right: 1.5rem;
                 font-size: map-get(variables.$font-sizes, "subtext");
 
-            }
-
-            .theme{
-                width: 5%;
-
-                a img{
-                    width: 40%;
-                }
             }
 
             .language {

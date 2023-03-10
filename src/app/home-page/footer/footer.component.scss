@@ -1,26 +1,24 @@
 @use '../../design-system/variables';
 
-.footer-content{
-    text-align: center;
-    padding-bottom: .2rem;
-    margin-top: 2rem;
+.footer-content {
+  text-align: center;
+  padding-bottom: .2rem;
+  margin-top: 2rem;
 
-    .icons-footer{
+  .icons-footer {
+    a {
+      color: black;
 
-        a{
-            color: black;
+      .icon-image {
+        width: 2%;
+        margin: 0 1rem;
+        cursor: pointer;
+      }
 
-            .icon-image{
-                width: 2%;
-                margin: 0 1rem;
-                cursor: pointer;
-            }
-    
-            mat-icon{
-                margin: 0 1rem;
-                cursor: pointer;
-            }
-        }
-
+      mat-icon {
+        margin: 0 1rem;
+        cursor: pointer;
+      }
     }
+  }
 }

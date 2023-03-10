@@ -26,6 +26,7 @@
         .project-name{
             font-size: map-get(variables.$font-sizes, "subtext");
             margin-bottom: .5rem;
+            color: black;
         }
 
         &:hover {
