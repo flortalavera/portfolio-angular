@@ -1,4 +1,4 @@
-<h1 class="section-title">Contactame</h1>
+<h1 class="section-title"> {{ 'sections.2' | translate }} </h1>
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
   <div class="form-fields">
     <mat-form-field appearance="fill">
@@ -28,6 +28,6 @@
         <div *ngIf="contactForm.controls['message']?.errors?.['required']">El Mensaje es requerido.</div>
       </div>
     </mat-form-field>
-    <button mat-button type="submit" class="send-message" [disabled]="!contactForm.valid">ENVIAR</button>
+    <button mat-button type="submit" class="send-message" [disabled]="!contactForm.valid"> {{ 'buttons.contact' | translate }} </button>
   </div>
 </form>

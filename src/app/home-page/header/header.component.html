@@ -2,34 +2,48 @@
     <div class="header-container">
         <nav class="navigation-menu">
             <li>
-                <a href="#about-me">Sobre mi</a>
+                <a href="#about-me">{{ 'navbarItems.0' | translate }}</a>
             </li>
             <li>
-                <a href="#skills">Aptitudes</a>
+                <a href="#skills">{{ 'navbarItems.1' | translate }}</a>
             </li>
             <li>
-                <a href="#projects">Proyectos</a>
+                <a href="#projects">{{ 'navbarItems.2' | translate }}</a>
             </li>
             <li>
-                <a href="#contact">Contactame</a>
+                <a href="#contact">{{ 'navbarItems.3' | translate }}</a>
             </li>
-            <li>
-                <button mat-icon-button matTooltip="Toggle theme" mat-theme-toggle>
-                    <mat-icon>invert_colors</mat-icon>
-                </button>
-            </li>
+            <div class="theme">
+                <li>
+                    <a href="#">
+                        <img title="Dark Mood" src="../../../assets/images/darkMood.png" alt="Modo Nocturno">
+                    </a>
+                </li>
+            </div>
+            <div class="language">
+                <li>
+                    <a href="#" (click)="changeLanguage('en')">
+                        <img title="English" src="../../../assets/images/language/EN.png" alt="Bandera Inglaterra">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" (click)="changeLanguage('es')">
+                        <img title="Español" src="../../../assets/images/language/ES.png" alt="Bandera Espania">
+                    </a>
+                </li>
+            </div>
         </nav>
         <div class="hero-container">
             <div class="hero-texts">
                 <h1 class="hero-title">
-                    Hola!
+                    {{ 'header.greeting' | translate }}
                 </h1>
                 <h1 class="hero-title">
-                    Soy Florencia Talavera
+                    {{ 'header.title' | translate }}
                 </h1>
                 <h1 class="hero-title">[Front-End Developer]</h1>
                 <h2 class="hero-subtitle">
-                    Transformando ideas a realidades
+                    {{ 'header.phrase' | translate }}
                 </h2>
             </div>
         </div>

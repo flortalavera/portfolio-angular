@@ -3,8 +3,26 @@
         "About Me", "Skills", "Projects", "Contact Me"
     ],
     "header": {
-        "greeting": "Hi",
+        "greeting": "Hi!",
         "title": "I'm Florencia Talavera",
         "phrase": "Transforming ideas into realities"
+    },
+    "aboutMe": "I am very responsible, honest, respectful, and organized. I have excellent interpersonal communication skills, I can clearly convey my ideas and execute them properly. I am capable of efficiently multitasking and keeping track of projects with estimated deadlines. I love working collaboratively, but I also have a mindset focused on developing work autonomously. My daily goal is to learn something new and improve my practices.",
+    "buttons": {
+        "cv": "Download CV",
+        "contact": "SEND"
+    },
+    "sections": [
+        "Skills and Tools", "Personal Projects", "Contact Me"
+    ],
+    "skillsText": {
+        "first": "Currently, I am taking private English classes at",
+        "level": "My current level is B1",
+        "third": "I know the importance of this language both in the workplace and for strengthening self-confidence, development, and performance.",
+        "others": "I am also continuing to learn and improve in technologies such as:"
+    },
+    "snackbar": {
+        "messageOk": "Message sent successfully",
+        "messageError": "Unable to send message. Please try again later."
     }
 }

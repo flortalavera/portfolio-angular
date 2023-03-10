@@ -1,4 +1,4 @@
-<h1 class="section-title">Aptitudes y Herramientas</h1>
+<h1 class="section-title"> {{ 'sections.0' | translate }} </h1>
 <div class="cards-content">
     <mat-card>
         <mat-card-header class="skill-name">Javascript</mat-card-header>
@@ -70,14 +70,17 @@
     </mat-card>
 </div>
 <div class="others-skills">
-    <p class="spacing-lines">
-        Actualmente estoy tomando clases particulares de inglés en <a href="http://ukidiomas.com.ar/" target="_blank">
-            @ukingles</a> .
-        Mi nivel actual es B1 <a href="https://www.efset.org/cert/XY75DQ" target="_blank">EF SET Certificate</a> .<br>
-        Sé lo importante de éste idioma tanto en el ámbito laboral, como para fortalecer la autoconfianza,
-        desarrollo y desempeño.<br>
-        También sigo aprendiendo y perfeccionandome en tecnologías como:
-        <img src="" alt=""><img src="" alt=""><img src="" alt="">
-    </p>
+    <div class="text">
+        <p class="spacing-lines">
+            {{ 'skillsText.first' | translate }} <a href="http://ukidiomas.com.ar/" target="_blank">
+                @ukingles</a> .<br>
+            {{ 'skillsText.level' | translate }} <a href="https://www.efset.org/cert/XY75DQ" target="_blank">EF SET Certificate</a> .<br>
+            {{ 'skillsText.third' | translate }} <br>
+            {{ 'skillsText.others' | translate }}
+        </p>
+        <div class="images">
+            <img src="" alt=""><img src="" alt=""><img src="" alt="">
+        </div>
+    </div>
     <img src="../../../assets/images/study.png" alt="mujer sentada en la computadora escribiendo">
 </div>

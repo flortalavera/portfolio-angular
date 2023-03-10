@@ -11,7 +11,7 @@
     position: relative;
 
     .header-container {
-        width: 90%;
+        width: 100%;
         overflow: hidden;
         padding: 1rem;
 
@@ -21,8 +21,26 @@
 
             a{
                 color:black;
-                margin-right: 2rem;
+                margin-right: 1rem;
                 font-size: map-get(variables.$font-sizes, "subtext");
+
+            }
+
+            .theme{
+                width: 5%;
+
+                a img{
+                    width: 40%;
+                }
+            }
+
+            .language {
+                width: 10%;
+                display: flex;
+            
+                a img{
+                    width: 60%;
+                }
             }
         }
 

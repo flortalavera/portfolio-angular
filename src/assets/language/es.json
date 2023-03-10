@@ -1,0 +1,31 @@
+{
+    "navbarItems": [
+        "Sobre Mi",
+        "Aptitudes",
+        "Proyectos",
+        "Contactame"
+    ],
+    "header": {
+        "greeting": "Hola!",
+        "title": "Soy Florencia Talavera",
+        "phrase": "Transformando ideas en Realidades"
+    },
+    "aboutMe": "Soy muy responsable, honesta, respetuosa y organizada. Tengo una excelente comunicación interpersonal, sé transmitir mis ideas con claridad y ejecutarlas de manera adecuada. Soy capaz de desarrollar varias tareas a la vez de forma eficaz, así como también contabilizar los proyectos bajo estimación de plazos. Me encanta cooperar en equipo, pero también poseo una mentalidad enfocada a desarrollar el trabajo de forma autónoma. Mi propósito diario es aprender algo nuevo y mejorar mis prácticas.",
+    "buttons": {
+        "cv": "Descargar CV",
+        "contact": "ENVIAR"
+    },
+    "sections": [
+        "Aptitudes y Herramientas", "Proyectos Personales", "Contáctame"
+    ],
+    "skillsText": {
+        "first": "Actualmente estoy tomando clases particulares de inglés en",
+        "level": "Mi nivel actual es B1",
+        "third": "Sé lo importante de éste idioma tanto en el ámbito laboral, como para fortalecer la autoconfianza, desarrollo y desempeño.",
+        "others": "También sigo aprendiendo y perfeccionandome en tecnologías como:"
+    },
+    "snackbar": {
+        "messageOk": "Mensaje enviado correctamente",
+        "messageError": "No se pudo enviar el mensaje. Por favor intente más tarde."
+    }
+}
