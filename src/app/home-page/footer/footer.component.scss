@@ -22,3 +22,64 @@
     }
   }
 }
+
+/* Responsive Styles */
+
+@media screen and (max-width: 992px){
+  .footer-content {
+  
+    .icons-footer {
+      a {
+  
+        .icon-image {
+          width: 3%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 672px){
+  .footer-content {
+    p{
+      font-size: 1.3rem;
+    }
+  
+    .icons-footer {
+      a {
+  
+        .icon-image {
+          width: 4%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 504px){
+  .footer-content {
+  
+    .icons-footer {
+      a {
+  
+        .icon-image {
+          width: 5%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 428px){
+  .footer-content {
+  
+    .icons-footer {
+      a {
+  
+        .icon-image {
+          width: 6%;
+        }
+      }
+    }
+  }
+}

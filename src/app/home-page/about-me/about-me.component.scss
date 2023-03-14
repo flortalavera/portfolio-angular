@@ -8,24 +8,26 @@
     margin: 0 15rem;
     align-items: center;
 
-    .personal-image{
-        display: flex;
-        justify-items: center;
-        margin: 1rem;
-        
-        img{
-            width: 20%;
-            border-radius: 50%;
-            margin-left: 18rem;
+    .image-and-text{
+        display: grid;
+        grid-template-areas: 'text img';
+        align-items: center;
+
+        .personal-image{
+            margin: 1rem;
+            
+            img{
+                width: 78%;
+            }
         }
-    }
-
-    .text-presentation{
-        text-align: center;
-        font-size: map-get(variables.$font-sizes, "subtext");
-
-        p{
-            line-height: 1.3;
+    
+        .text-presentation{
+            text-align: center;
+            font-size: map-get(variables.$font-sizes, "subtext");
+    
+            p{
+                line-height: 1.3;
+            }
         }
     }
 
@@ -34,5 +36,110 @@
         color: #ffff;
         padding: 0 2rem;
         background-color: map-get(variables.$colors, "medium");
+    }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1144px){
+    .presentation-content{
+        margin: 0 10rem;
+
+        .image-and-text{
+            .personal-image{
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 968px){
+    .presentation-content{
+        margin: 0 5rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .presentation-content{
+        margin: 0 3rem;
+
+        .image-and-text{
+            .personal-image{
+                img{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    .presentation-content{
+        margin: 0;
+
+        .image-and-text{
+
+            .personal-image{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 574px){
+    .presentation-content{
+        .image-and-text{
+            display: flex;
+            flex-direction: column-reverse;
+
+            .personal-image{
+                img{
+                    width: 40%;
+                    margin-left: 8rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 498px){
+    .presentation-content{
+        .image-and-text{
+
+            .personal-image{
+                img{
+                    margin-left: 7rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .presentation-content{
+        .image-and-text{
+
+            .personal-image{
+                img{
+                    margin-left: 6rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 406px){
+    .presentation-content{
+        .image-and-text{
+            .personal-image{
+                img{
+                    width: 50%;
+                    margin-left: 4.5rem;
+                }
+            }
+        }
     }
 }

@@ -32,3 +32,11 @@ body.dark {
     color: #ffffff;
 
 }
+
+/* Responsive Styles */
+
+@media screen and (max-width: 708px){
+    body .theme a{
+        width: 10%;
+    }
+}

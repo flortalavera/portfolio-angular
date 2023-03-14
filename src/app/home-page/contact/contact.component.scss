@@ -24,3 +24,22 @@
     padding: 0 2rem;
     background-color: map-get(variables.$colors, "medium");
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 616px){
+    .form-fields .mat-mdc-form-field {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 448px){
+    .form-fields .mat-mdc-form-field {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 396px){
+    .section-title{
+        margin: 4rem 0;
+    }
+}

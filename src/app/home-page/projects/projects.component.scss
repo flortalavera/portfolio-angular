@@ -1,36 +1,91 @@
 @use '../../design-system/reset';
 @use '../../design-system/variables';
 
-.section-title{
+.section-title {
     text-align: center;
     font-size: map-get(variables.$font-sizes, "title");
     margin: 4rem;
 }
 
-.projects-content{
+.projects-content {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    mat-card{
+    mat-card {
         width: 30%;
         align-items: center;
         margin: 1rem;
         cursor: pointer;
 
-        .project-image{
+        .project-image {
             width: 100%;
         }
-    
-        .project-name{
+
+        .project-name {
             font-size: map-get(variables.$font-sizes, "subtext");
             margin-bottom: .5rem;
             color: black;
         }
 
-        &:hover {
-            transform: scale(1.05);
+    }
+}
+
+.project-image.with-description {
+    position: relative;
+}
+
+.project-image.with-description:hover+.description {
+    display: block;
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    color: #fff;
+    padding: 20px;
+}
+
+.description p {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.project-image.with-description:hover {
+    opacity: 0.8;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 912px){
+    .projects-content {
+        mat-card {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 579px){
+    .section-title{
+        line-height: 1.5;
+    }
+    .projects-content {
+        mat-card {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 459px){
+    .projects-content {
+        mat-card {
+            width: 100%;
         }
     }
 }
