@@ -1,13 +1,13 @@
 @use '../../design-system/reset';
 @use '../../design-system/variables';
 
-.section-title {
+.section-title{
     text-align: center;
     font-size: map-get(variables.$font-sizes, "title");
     margin: 4rem;
 }
 
-.projects-content {
+.services-content {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -18,53 +18,42 @@
         align-items: center;
         margin: 1rem;
         cursor: pointer;
+        border: none;
 
-        .project-image {
-            width: 100%;
+        .service-image {
+            width: 30%;
         }
 
-        .project-name {
+        .service-name {
             font-size: map-get(variables.$font-sizes, "subtext");
             margin-bottom: .5rem;
             color: black;
         }
 
-        .type-app{
-            p{
-                color: black;
-            }
+        p{
+            margin: 1rem;
+            color: black;
         }
 
     }
 
 }
 
-
-/* Responsive styles */
-@media screen and (max-width: 912px) {
-    .projects-content {
+/* Responsive Styles */
+@media screen and (max-width: 700px){
+    .services-content {
+    
         mat-card {
-            width: 50%;
+            width: 50%;   
         }
     }
 }
 
-@media screen and (max-width: 579px) {
-    .section-title {
-        line-height: 1.5;
-    }
-
-    .projects-content {
+@media screen and (max-width: 532px){
+    .services-content {
+    
         mat-card {
             width: 70%;
-        }
-    }
-}
-
-@media screen and (max-width: 459px) {
-    .projects-content {
-        mat-card {
-            width: 100%;
         }
     }
 }

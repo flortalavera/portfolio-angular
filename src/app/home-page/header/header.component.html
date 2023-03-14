@@ -11,16 +11,19 @@
                 <a href="#projects">{{ 'navbarItems.2' | translate }}</a>
             </li>
             <li>
-                <a href="#contact">{{ 'navbarItems.3' | translate }}</a>
+                <a href="#services">{{ 'navbarItems.3' | translate }}</a>
+            </li>
+            <li>
+                <a href="#contact">{{ 'navbarItems.4' | translate }}</a>
             </li>
             <div class="language">
                 <li>
-                    <a href="#" (click)="changeLanguage('en')">
+                    <a href="#" (click)="changeLanguage('en')" ngxTranslate>
                         <img title="English" src="../../../assets/images/language/EN.png" alt="Bandera Inglaterra">
                     </a>
                 </li>
                 <li>
-                    <a href="#" (click)="changeLanguage('es')">
+                    <a href="#" (click)="changeLanguage('es')" ngxTranslate>
                         <img title="Español" src="../../../assets/images/language/ES.png" alt="Bandera Espania">
                     </a>
                 </li>

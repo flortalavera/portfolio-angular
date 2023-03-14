@@ -1,6 +1,10 @@
 {
     "navbarItems": [
-        "About Me", "Skills", "Projects", "Contact Me"
+        "About Me",
+        "Skills",
+        "Projects",
+        "Services",
+        "Contact Me"
     ],
     "header": {
         "greeting": "Hi!",
@@ -9,17 +13,36 @@
     },
     "aboutMe": "I am very responsible, honest, respectful, and organized. I have excellent interpersonal communication skills, I can clearly convey my ideas and execute them properly. I am capable of efficiently multitasking and keeping track of projects with estimated deadlines. I love working collaboratively, but I also have a mindset focused on developing work autonomously. My daily goal is to learn something new and improve my practices.",
     "buttons": {
-        "cv": "Download CV",
+        "cv": "Download Resume",
         "contact": "SEND"
     },
     "sections": [
-        "Skills and Tools", "Personal Projects", "Contact Me"
+        "Skills and Tools",
+        "Personal Projects",
+        "Services",
+        "Contact Me"
     ],
     "skillsText": {
         "first": "Currently, I am taking private English classes at",
         "level": "My current level is B1",
         "third": "I know the importance of this language both in the workplace and for strengthening self-confidence, development, and performance.",
         "others": "I am also continuing to learn and improve in tools such as:"
+    },
+    "services": {
+        "title": [
+            "Website Design",
+            "Website Development",
+            "Logo Design",
+            "Responsive Website Design",
+            "Social Media Integration"
+        ],
+        "description": {
+            "websiteDesign": "The approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.",
+            "websiteDevelopment": "The web development process involves taking the graphic elements defined in the design process and coding them based on the requested technologies.",
+            "logoDesign": "The goal is to design a professional yet creative logo that reflects your company's spirit and leaves a lasting, memorable effect.",
+            "responsiveWebsiteDesign": "Having a responsive layout means that your website fluidly resizes for optimal viewing regardless of the screen size or device (e.g. iPhone, iPad).",
+            "socialMediaIntegration": "Social media integration enables your website to post updates to Facebook, displays a Twitter feed, and links to your social media accounts."
+        }
     },
     "snackbar": {
         "messageOk": "Message sent successfully",

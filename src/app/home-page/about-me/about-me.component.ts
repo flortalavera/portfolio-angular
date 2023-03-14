@@ -7,11 +7,14 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent {
+  downloadLink: string = '';
 
   constructor(
-    private _translateService: TranslateService
+    private _translateService: TranslateService,
+
   ) { 
     this._translateService.setDefaultLang('es');
+    
   }
 
 }
