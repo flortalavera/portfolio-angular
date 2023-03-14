@@ -24,4 +24,5 @@ ng serve
 
 ## Listo! :rocket:
 
-For any inconvenience please contact its developer at florii.talavera@gmail.com or https://www.linkedin.com/in/flor-talavera/
+For any inconvenience please contact its developer at florii.talavera@gmail.com <br>
+or https://www.linkedin.com/in/flor-talavera/
