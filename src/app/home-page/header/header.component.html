@@ -27,6 +27,7 @@
                         <img title="Español" src="../../../assets/images/language/ES.png" alt="Bandera Espania">
                     </a>
                 </li>
+                <app-about-me *ngIf="showComponent == true" [languageSelected]="languageSelected" (languageSelectedChange)="languageSelected = $event"></app-about-me>
             </div>
         </nav>
         <div class="hero-container">

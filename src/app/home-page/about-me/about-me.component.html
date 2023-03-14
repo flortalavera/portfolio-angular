@@ -8,8 +8,11 @@
         </div>
     </div>
     <div class="button">
-        <a download="CV-Flor-Talavera.pdf">
+        <a *ngIf="languageSelected == 'es'" download="CV-Flor-Talavera.pdf" href="../../../assets/CV-Florencia-Talavera.pdf">
           <button mat-button  class="download-cv"> {{ 'buttons.cv' | translate }} </button>
+        </a>
+        <a *ngIf="languageSelected == 'en'" download="CV-Flor-Talavera.pdf" href="../../../assets/Resume-Flor-Talavera.pdf">
+            <button mat-button  class="download-cv"> {{ 'buttons.cv' | translate }} </button>
         </a>
     </div>
 </div>

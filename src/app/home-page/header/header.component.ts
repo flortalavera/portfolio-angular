@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -7,6 +7,9 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  languageSelected: string = 'es';
+  @Output() languageSelectedChange = new EventEmitter<string>();
+  showComponent: boolean = false;
 
   constructor(
     private _translateService: TranslateService
@@ -16,6 +19,8 @@ export class HeaderComponent {
 
   changeLanguage(language: string): void {
     this._translateService.use(language);
+    this.languageSelected = language;
+    this.languageSelectedChange.emit(this.languageSelected);
   }
 
 }

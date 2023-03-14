@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -7,7 +7,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent {
-  downloadLink: string = '';
+  @Input() languageSelected: string = 'es';
+  @Output() languageSelectedChange = new EventEmitter<string>();
 
   constructor(
     private _translateService: TranslateService,
@@ -15,6 +16,12 @@ export class AboutMeComponent {
   ) { 
     this._translateService.setDefaultLang('es');
     
+  }
+
+  ngOnInit(){
+    this._translateService.onLangChange.subscribe((event) => {
+      this.languageSelected = event.lang;
+    });
   }
 
 }
