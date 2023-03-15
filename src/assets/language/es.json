@@ -34,14 +34,16 @@
             "Desarrollo de sitios web",
             "Diseño de logotipos",
             "Diseño de sitios web receptivos",
-            "Integración de redes sociales"
+            "Integración de redes sociales",
+            "Tutorias - Mentorías"
         ],
         "description": {
             "websiteDesign": "El enfoque para el diseño de sitios web es crear un sitio que fortalezca la marca de su empresa y al mismo tiempo garantice la facilidad de uso y la simplicidad para su audiencia.",
             "websiteDevelopment": "El proceso de desarrollo web implica tomar los elementos gráficos definidos en el proceso de diseño y codificarlos en base a las tecnologías solicitadas.",
             "logoDesign": "El objetivo es diseñar un logotipo profesional pero creativo que refleje el espíritu de su empresa y deje un efecto duradero y memorable.",
             "responsiveWebsiteDesign": "Tener un diseño receptivo significa que su sitio web cambia de tamaño de manera fluida para una visualización óptima, independientemente del tamaño de la pantalla o del dispositivo (por ejemplo, iPhone, iPad).",
-            "socialMediaIntegration": "La integración de redes sociales permite que su sitio web publique actualizaciones en Facebook, muestre un feed de Twitter y enlaces a dichas cuentas."
+            "socialMediaIntegration": "La integración de redes sociales permite que su sitio web publique actualizaciones en Facebook, muestre un feed de Twitter y enlaces a dichas cuentas.",
+            "mentoring": "Para todos aquellos que recién estén comenzando y necesitan asesoria o ayuda con algunos temas técnicos, pueden contactarme y con mucho gusto los ayudaré!"
         }
     },
     "snackbar": {

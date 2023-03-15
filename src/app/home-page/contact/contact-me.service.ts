@@ -22,4 +22,14 @@ export class ContactMeService {
 
     return this.http.post(`${api_url}/Messages`, stringFieldData, httpOptions)
   }
+
+  sendEmailWithMessage(body: any, api_url: string): Observable<any> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    };
+
+    return this.http.post(`${api_url}/Email`,body, httpOptions)
+  }
 }

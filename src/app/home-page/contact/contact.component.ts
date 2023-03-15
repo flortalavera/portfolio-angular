@@ -33,7 +33,8 @@ export class ContactComponent {
   onSubmit() {
     const data = this.contactForm.value;
     this._contacServ.sendMessage(data, this.apiUrl).subscribe(
-      (data) => {
+      (res) => {
+        this.sendToEmailWithInformation(data);
         this._translateService.get('snackbar.messageOk').subscribe((message: string) => {
           this._snackBar.open(message, "OK").afterDismissed().subscribe(() => {
             location.reload();
@@ -49,5 +50,17 @@ export class ContactComponent {
         console.log(error)
       }
     );
+    
+  }
+
+  sendToEmailWithInformation(data: any){
+    this._contacServ.sendEmailWithMessage(data, this.apiUrl).subscribe(
+      (res) => {
+        console.log(res);
+      },
+      (error) => {
+        console.log(error);
+      }
+    )
   }
 }
